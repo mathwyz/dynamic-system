@@ -1,0 +1,130 @@
+\part{结构稳定性}
+\section{离散动力系统的结构稳定性}
+
+\subsection{全局结构稳定性}
+
+\begin{definition}
+    \(C^{r}\)流形X上的动力系统f称为是结构稳定的,
+    如果存在f在\(C^{r}\)拓扑中的领域U,
+    使得,对任意\(g\in U\)
+    都与f拓扑共轭.
+\end{definition}
+
+显然,\(C^{r}\)结构稳定则是\(C^{r+1}\)结构稳定,
+\(C_1\)结构稳定性通常直接称为结构稳定性.
+
+\begin{theorem}
+    \(C^{r}\)结构稳定则是\(C^{r+1}\)结构稳定
+\end{theorem}
+
+\begin{proof}
+
+\end{proof}
+
+
+\subsubsection{f的\(C^{r}\)拓扑}
+
+固定M的允许坐标领域的一个有限覆盖\((U_i,\phi_i),i=1,2,\dots,N\)
+称一列\(C^{r}\)微分同胚\(f_n\)在\(C^{r}\)意义下,
+收敛到一个\(C^{r}\)微分同胚\(f\),
+如果,对所有\(1\leq i,j \leq N\),
+局部坐标表示,
+\(\phi_j f_n \phi _i^{-1}\)连同直到r阶偏导数,
+在使这些局部表示有意义的电上,
+一致收敛到
+\(\phi_jf\phi_i^{-1}\)
+及其所对应的偏导数.
+
+\subsubsection{f的范数的定义}
+
+
+\subsection{局部结构稳定性}
+
+\begin{definition}
+    设\(U\subset X\)是开集,
+    且\(f\in C^{r}(U,X)\)是
+    到其相集的同胚,
+    f在\(p \in U\)处被称为是\(C^{r}\)局部结构稳定的,
+    如果存在p点的领域\(V\subset U\)及
+    f在\(C^{r}(U X)\)中的领域\(W\),
+    使得,对任意\(g\in W\),
+    都与某点\(q\in V\)
+    处,与\(f\)在\(p\)点处局部拓扑共轭.
+\end{definition}
+
+
+\begin{definition}
+    f在点\(p\in X\)和g在点\(q\in Y\)
+    称为局部拓扑共轭的,
+    如果存在p,q的开领域
+    \(U\subset X\),\(V \subset Y\),
+    和同胚
+    \(h:\)
+    使得
+
+\end{definition}
+
+\begin{theorem}
+    设X是Bananch空间,
+    \(U\subset X\)是O的开领域,
+    若O是\(f\in C^{1}(U,X)\)的双曲不动点,
+    则f在O附近是局部结构稳定的.
+\end{theorem}
+
+\begin{proof}
+    第一步,首先证明,存在O的领域\(W\subset U\)
+    和f的\(C^1\)领域\(V\)使得,
+    使得,任意\(g \in V\)在W中有唯一的不动点c,
+    并且c是g的双曲不动点.
+    事实上,X上双曲线性映射全体\(H(X)\)构成可逆有界线性映射空间
+    \(L(X)\)上的开集,
+    故存在\(\delta\)使\(A=Df(O)\)的\(\delta -\)领域属于\(H(X)\).
+    由Df的连续性,
+    存在\(\alpha >0\) 使得当
+    \(||x||<\alpha \)时,
+
+\end{proof}
+
+\section{连续动力系统的结构稳定性}
+
+
+\subsection{全局结构稳定性}
+
+%\begin{definition}
+ %   所谓X中某一系统
+  %  \[\frac{dx}{dt}=P(x,y),\frac{dy}{dt}=Q(x,y)\]
+%的\(\epsilon-\)临近系统,
+%是指满足条件
+%\[X-P+\left| \frac{\}{}\]
+
+\end{definition}
+
+
+\begin{theorem}[安德罗洛夫-旁特里雅金定理]
+    在\(X(\Omega)\)中系统结构稳定的重要条件是:
+    (1)它只有有限个奇点,
+    而且所有的奇点都是双曲的.
+    (2)它只有有限条闭轨,
+    而且所有的闭轨都是双曲的.
+    (3)它没有从鞍点到鞍点的轨线.
+\end{theorem}
+
+\begin{theorem}[皮邦图定理]
+  设\(M^2\)是二维可定向的紧流形,
+  \(f\in C^1(M^2)\),
+  则向量场为结构稳定的充要条件是:
+  (1)系统有有限个平衡点和闭轨,
+  且他们都是双曲的;
+  (2)系统不存在从鞍点到鞍点的轨线;
+  (3)系统的非游荡点集仅由平衡点和闭轨组成.
+
+\end{theorem}
+
+\begin{theorem}[皮邦图稠密性定理]
+  设\(M^2\)是二维可定向的紧流形,
+  记\(C^1(M^2)\)中一切结构稳定的向量场的子集为
+  \(\Sigma\),
+  则\(\Sigma\)在\(C^1(M^2)\)中是开的且是稠密的.
+\end{theorem}
+
+\subsection{局部结构稳定性}

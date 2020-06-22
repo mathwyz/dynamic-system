@@ -1,0 +1,707 @@
+\part{动力系统的概念}
+\section{动力系统}
+
+\begin{Defination}[离散动力系统]
+\(f\)是拓扑空间\(X\)上的同胚，
+其迭代构成来了一个\textbf{离散动力系统}\(\{f^n:n\in Z\}\).
+\end{Defination}
+
+\begin{Defination}[连续动力系统]
+\(\phi(t,x):R\times X\mapsto X\)是拓扑空间X上的连续流，
+则称之为\textbf{连续动力系统}。
+\end{Defination}
+
+\begin{Defination}[微分动力系统]
+如果X是一个\(C^r\)微分流形，
+\(\phi\)是\(C^r\)映射，
+则称\(\phi\)诱导出的动力系统是\textbf{微分动力系统}。
+\end{Defination}
+\subsection{离散动力系统}
+
+\begin{Defination}[拓扑空间]
+设\(X\)是一个集合，\(\mathscr{T}\) 是\(X\)的一个子集族，
+如果\(\mathscr{T}\)满足如下条件：
+                \begin{enumerate}
+                        \item [\((\romannumeral 1)\)]  \( X,\emptyset \in \mathscr{T}\)；
+                        \item [\((\romannumeral 2)\)]  若\(A,B \in \mathscr{T}\),则\(A\cap B\in \mathscr{T}\);
+                        \item [\((\romannumeral 3)\)]  若\(\mathscr{T}_1\subset \mathscr{T}\),则 \(\cup_{A \in \mathscr{T}_1}A\in \mathscr{T}\),
+                \end{enumerate}
+则称\(\mathscr{T}\)是X的一个拓扑。
+\end{Defination}
+如果\(\mathscr{T}\)是\(X\)的一个拓扑，
+则称偶对\((X,\mathscr{T})\)是一个\textbf{拓扑空间}，
+或称集合\(X\)是一个相对于拓扑\(\mathscr{T}\)而言的拓扑空间；
+或者当拓扑空间\(\mathscr{T}\)已经约定或者在行文中已经指出而无需说明时，
+称集合\(X\)是一个拓扑空间。
+此外\(\mathscr{T}\)的每一个元素都叫做拓扑空间\((X.\mathscr{T})\)(或\(X\)）中的一个开集。
+
+按照布尔巴基学派的观点，在集合上可以定义的母结构主要有三种：
+
+
+一种是代数结构，集合上有了代数结构之后，就可以运算，从两个元素产生第三种。
+
+% \[\left\{
+%       \begin{array}
+%       定义加法（适当的运算法则）&\text{群},\\
+%       定义加法（适当的运算法则）&\text{环},\\
+%       定义加法（适当的运算法则）&\text{域},\\
+%       定义加法（适当的运算法则）&\text{线性空间}.
+%       \end{array}
+% \right.\]
+
+一种是序结构，集合之间的元素有了先后关系。
+一种是拓扑结构，它用来描述连续性，分离性，附近，边界等性质。
+
+\begin{Defination}
+设X和Y是两个拓扑空间，
+\(f:X\mapsto Y\),
+如果Y中每一个开集U的原像\(f^{-1}(U)\)是X中的一个开集，
+则称f是从X到Y的一个\textbf{连续映射}，
+或简称映射f连续。
+\end{Defination}
+
+\begin{Defination}
+设X和Y是两个拓扑空间，
+如果\(f:X\mapsto Y\)是一个一一映射，
+并且\(f,f^{-1}:X\mapsto Y\),
+则称f是一个\textbf{同胚映射}或\textbf{同胚}。
+\end{Defination}
+
+\begin{Defination}[离散动力系统]
+\(f\)是拓扑空间\(X\)上的同胚，
+其迭代构成来了一个离散动力系统\(\{f^n:n\in Z\}\).
+\end{Defination}
+
+
+在\(R^2\)上的线性变换\(R_{\theta}\)是指一个旋转\(\theta\)角的变换，
+它显然导出一个动力系统。
+
+
+\begin{proof}
+（1）\(R^2\)是拓扑空间。
+我们引入\(R^2\)中的标准拓扑，
+由此，我们说明了\(R^2\)上面有拓扑结构，\(R^2\)是拓扑空间。
+（2）\(R_{\theta}\)是同胚映射。
+在都是空间中，
+\(f\)同胚，
+当且仅当\(f\)和\(f^{-1}\)都是连续函数。
+
+当绕\((0,0)\)旋转\(\theta\)角时，
+我们知道变换矩阵为
+\[M(\theta)=
+\left(
+  \begin{array}{cc}
+    \cos \theta & -\sin \theta \\
+    \sin \theta & \cos \theta \\
+  \end{array}
+\right)\]
+也就是，变换矩阵是一个连续函数矩阵。
+其逆变换为：
+\[M(-\theta)=
+\left(
+  \begin{array}{cc}
+    \cos （- \theta） & -\sin （-\theta） \\
+    \sin （-\theta） & \cos （-\theta） \\
+  \end{array}
+\right)\]
+也是一个连续函数矩阵。
+
+如果是绕\((x',y')\)旋转，
+首先我们将维度升高一维，
+将初始点写为\((x_0,y_0,1)\)，
+变换后的点写为\((x_1,y_1,1)\)，
+这是如果是绕原点的变换，
+那么变换矩阵可以相应的写为：
+
+\[M(\theta)=
+\left(
+  \begin{array}{ccc}
+    \cos \theta & -\sin \theta & 0 \\
+    \sin \theta & \cos \theta  & 0 \\
+    0 & 0 & 1
+  \end{array}
+\right)\]
+
+首先我们用一个变换矩阵将其平移到\((0,0)\),
+这是变换矩阵和逆变换的变换矩阵为
+\[\left(
+  \begin{array}{ccc}
+    1 & 0 & -x' \\
+    0 & 1 & -y' \\
+    1 & 0 & 1 \\
+  \end{array}
+\right)，
+\left(
+  \begin{array}{ccc}
+    1 & 0 & x' \\
+    0 & 1 & y' \\
+    1 & 0 & 1 \\
+  \end{array}
+\right)\]
+
+这时，
+我们将绕绕\((x',y')\)旋转分解成三个变换，
+首先平移\((-x',-y')\)，
+在绕\((0,0)\)旋转，
+然后再平移\((x',y')\)将这三个矩阵乘起来就是我们的变换矩阵。
+\begin{align*}
+  M(\theta,(x',y'))= & \left(
+  \begin{array}{ccc}
+    1 & 0 & -x' \\
+    0 & 1 & -y' \\
+    1 & 0 & 1 \\
+  \end{array}
+\right)
+\left(
+  \begin{array}{ccc}
+    \cos \theta & -\sin \theta & 0 \\
+    \sin \theta & \cos \theta  & 0 \\
+    0 & 0 & 1\\
+  \end{array}
+\right)
+\left(
+  \begin{array}{ccc}
+    1 & 0 & x' \\
+    0 & 1 & y' \\
+    1 & 0 & 1 \\
+  \end{array}
+\right)\\
+  = & \left(
+  \begin{array}{ccc}
+    \cos \theta & -\sin \theta & (1-\cos\theta)x'+\sin\theta y' \\
+    \sin \theta & \cos \theta  & (1-\cos\theta)y'+\sin\theta y' \\
+    0 & 0 & 1\\
+  \end{array}
+\right)
+\end{align*}
+
+它是一个连续函数举证，
+把\(\theta\)换成\(-\theta\)就得到了逆变换的变换矩阵。
+\[\left(
+  \begin{array}{ccc}
+    \cos (-\theta) & -\sin (-\theta) & (1-\cos(-\theta))x'+\sin(-\theta) y' \\
+    \sin (-\theta) & \cos (-\theta)  & (1-\cos(-\theta))y'+\sin(-\theta) y' \\
+    0 & 0 & 1\\
+  \end{array}
+\right)
+\]
+
+\end{proof}
+
+
+\subsection{连续动力系统}
+
+\begin{Defination}
+一个映射\(\phi(t,x):R\times X \rightarrow X\)称为集合X上的一个\textbf{流}，
+如果对\(\forall t_1,t_2 \in R,x\in X\).
+\begin{enumerate}
+                        \item [\((\romannumeral 1)\)]  \(\phi(0,x)=x\)；
+                        \item [\((\romannumeral 2)\)]  \(\phi(t_1+t_2,x)=\phi(t_1,\phi(t_2,x))\);
+                \end{enumerate}
+\end{Defination}
+
+
+设\(x=\phi(t,x_0)\)是常微分方程
+\(\frac{\,dx}{\,dt}=V(x)\)关于初值条件
+\(x(0)=x_0\)的解，
+其中\(x_0\in R^n\)而且\(f\)使方程满足存在唯一性。
+\(\{\phi(t,\cdot):R^n \rightarrow R^n:t\in R\}\) 构成一个动力系统。
+特别是映射\(f(x):=\phi(1,x)\)导出一个离散动力系统。
+
+
+在物理上，可以把它看成是物体在\(R^n\)空间中的运动，
+而且在此空间中的每一点x处的速度是已经被规定好的且与时间无关。
+\begin{proof}
+1、\(R^n\)上面有拓扑结构，
+从而\(R^n\) 是一个拓扑空间。
+
+我们通过引入\(R^n\)中的标准拓扑来说明这一点。
+
+2、\(\phi(t,x)\)是集合X上的一个流。
+
+首先，我们来验证平移不变性，
+即如果\(x=\phi(t,t_0,x_0)\)是方程的解，
+那么对于与任意的常数\(\tau\),
+\(x'=\phi(t+\tau,t_0,x_0)\)也是他的解。
+\[\frac{\,dx'}{\,dt}
+=\frac{\,d(\phi(t+\tau,t_0,x_0))}{\,dt}
+=\frac{\,d(\phi(t+\tau,t_0,x_0))}{\,d(t+\tau)}\times \frac{\,d(t+\tau)}{\,dt}
+=V(x)\times 1
+=V(x)\]
+这样，我们就验证了平移不变性。
+我们来看两个两个解\(\phi(t-t_0,0,x_0)\) 和\(\phi(t,t_0,x_0)\),
+他们满足相同的初值条件\(t_0.x_0\), 所以就有
+\[\phi(t-t_0,0,x_0)=\phi(t,t_0,x_0)\]
+再根据平移不变性，
+\[\phi(t-t_0,0,x_0)=\phi(t,0,x_0)\]
+也就是说\(\phi(t,0,x_0)\)代表了一切初始点在\(t_0.x_0\)的解的性质，
+所以，也简记为\(\phi(t,x_0)\).
+
+然后，我们取定一个初值\(x_0\)，我们来验证它的群性质。
+显然\(\phi(0,x_0)=x_0\).
+考虑\(\phi(t,\phi(s,x_0))\)和\(\phi(t+s,x_0)\)
+当t=0时，他们都取到了初值\(x_1\) 和\(x_2\),
+\[x_1=\phi(0,\phi(s,x_0))=\phi(s,x_0)\]
+\[x_2=\phi(0+s.x_0)=\phi(s,x_0)]
+% 所以对于 $\forall s$ ，他们的初值是相同的，
+根据解的存在唯一性，我们有
+% $$ \phi(t,\phi(s,x_0))= \phi (t+s,x_0) $$
+
+当\(x_0\) 取不同的点时，
+可能对应着不同的积分曲线，
+对应着不同的轨道，
+得到不同的\(\phi(t,x_0)\).
+我们让\(x_0\) 跑遍整个集合X，
+就可以得到，
+\[\phi(0,x)=x\]
+\[\phi(t,\phi(s,x))=\phi(t+s,x)\]
+到此，我们验证了\(\phi(t,x)\) 是一个流。
+
+3、\(\phi(t,x)\) 连续
+下面说明\(\phi(t,x)\) 在\((t_0,x_0)\) 点连续。
+根据三角不等式，我们有
+
+\begin{align*}
+   & \left| \phi(t,x)-\phi(t_0,x_0)\right| \\
+  = & \left| \phi(t,x)-\phi(t,x_0) +\phi(t,x_0) -\phi(t_0,x_0) \right|  \\
+  \leq &\left| \phi(t,x)-\phi(t,x_0)\right| +\left|\phi(t,x_0) -\phi(t_0,x_0) \right|
+\end{align*}
+
+对于任意给定的\(\epsilon > 0\),
+由解\(\phi(t,x_0)\)在\(t_0\)的连续性，
+存在\(\delta_1 (< \delta)\),
+使当\(|t-t_0|<\delta_1\)时，
+\[\left|\phi(t,x_0) -\phi(t_0,x_0) \right|< \frac{\epsilon}{2}\]
+
+根据解对初值的连续依赖性，
+\[\left| \phi(t,x)-\phi(t,x_0)\right| \leq |x-x_0|e^{Lt}\]
+其中L是Lipschitz常数。
+注意到，\(|t-t_0|< \delta_1\),\(|t|-|t_0| \leq |t-t_0| < \delta_1\),\(|t| \leq |t_0| + \delta_1\).
+此时，\(|x-x_0|e^{Lt} \leq |x-x_0|e^{L(|t_0|+\delta_1)}\)，
+其中\(e^{L(|t_0|+\delta_1)\)是一个常数。
+于是，根据范数的连续性，存在\(\delta_2\),
+使当\(|x-x_0|< \delta_2,x\in X\) 时，
+\(|x-x_0|e^{L(|t_0|+\delta_1)}< \frac{\epsilon}{2}\)
+即，
+\[\left| \phi(t,x)-\phi(t,x_0)\right|< c\]
+
+故，\(\left| \phi(t,x)-\phi(t_0,x_0)\right|< \frac{\epsilon}{2} +\frac{\epsilon}{2} =\epsilon\)
+\end{proof}
+
+
+\subsubsection {解对初值的连续依赖性的证明}
+\begin{thm}[Gronwall不等式]
+设\(x(t),f(t)\)为区间\([t_0,t_1]\) 上的实连续函数，
+\(f(t) \beq 0\),
+若存在实常数g，使得
+\[x(t) \leq	g + \int_{t_0}^{t}f(\tau)x(\tau)\,d\tau,t\in [t_0,t_1],\]
+则
+\[x(t) \leq g exp(\int_{t_0}^{t}f(\tau)\,d\tau),t \in [t_0,t_1],.\]
+\end{thm}
+
+\begin{thm}[推广的Gronwall不等式]
+设\(x(t),g(t)\)为区间\([t_0,t_1]\) 上的实连续函数，
+函数\(f(t) \beq 0\)在区间\([t_0,t_1]\)上可积，
+他们满足,
+\[x(t) \leq g(t) + \int_{t_0}^{t}f(\tau)x(\tau)\,d\tau,t \in [t_0,t_1],\]
+则当\(t \in [t_0,t_1]\)时，
+\[x(t) \leq g(t) + \int_{t_0}^{t}f(\tau)g(\tau)exp(\int_{\tau}^{t}f(s)\,ds)\,d\tau\]
+\end{thm}
+
+\begin{thm}
+设方程有解\(x(t,y_0)\)与\(x(t,z_0)\)，
+他们都在区间\([t_0,t_1]\)上存在，
+则对一切\(t\in [t_0,t_1]\)有，
+\[x(t,y_0)-x(t,z_0 \leq |y_0-z_0|e^{L(t-t_0)},\]
+其中L是常数。
+\end{thm}
+
+\begin{thm}
+设方程有解\(x(t,y_0)\)，
+在区间\([t_0,t_1]\)上存在，
+则存在\(y_0\)的领域U,
+使得当\(z_0 \in U\)时，
+就有方程的唯一一个解\(x(t,z_0)\)也在区间\([t_0,t_1]\)上有定义，
+则对一切\(t\in [t_0,t_1]\)有，
+\[x(t,y_0)-x(t,z_0 \leq |y_0-z_0|e^{L(t-t_0)},\]
+其中L是常数。
+\end{thm}
+
+\begin{center}
+  \textbf{证明顺序}
+\end{center}
+
+
+\begin{center}
+\begin{tikzpicture}
+  [node distance=1cm,
+  start chain=going below,]
+     \node[punktchain, join]  {Gronwall's inequality};
+     \node[punktchain, join] {Generalized Gronwall's inequality};
+     \node[punktchain, join]  {Theorem3};
+     \node[punktchain, join]   {Theorem4};
+  \end{tikzpicture}
+\end{center}
+
+\subsection{符号动力系统}
+设\(\Sigma\)是由一切双边序列,
+\(S=(\dots,s_{-2},s_{-1},s_{0},s_1,s_2,\dots)\)组成的集合,
+\(s_0\)表示零位坐标元素,
+映射,\(\delta:(\dots,s_{-1},s_0,s_1,\dots)\Rightarrow (\dots,d_{-1},s_0,s_1,\dots)\)
+易见(\dots,a_{-1},a_0,a_1,\dots)是周期点.
+
+1.\(\Sigma(N)\)是拓扑空间
+通过引入距离,
+\(d(x,y)=\Sigma_limits_{n\t0\infty}^{\infty}\frac{d(x_n,y_n)}{2^{|n|}}\)
+其中,
+\(d(x_n,y_n)=\)
+2.\(\delta\)是同胚,
+
+3.柱集
+
+4.可数拓扑基
+
+
+\subsection{微分动力系统}
+
+流形的概念是欧式空间的推广，
+粗略的说，
+流形在每一点的近傍和欧式空间的一个开集是同胚的，
+因此在每一点的近傍可以引入局部坐标系，
+流形是一块块"欧式空间"粘起来的结果。
+
+\begin{Defination}
+设M是Housdorff空间，
+若对任意一点\(x\in M\),
+都有x在M中的一个领域U同胚于欧式空间\(R^m\)的一个开集，
+则称M是一个m维\textbf{流形}。
+\end{Defination}
+
+设同胚映射为\(\phi_{U}:U\leftarrow \phi_{U}\),
+则称\((U,\phi_{U})\)是M的一个坐标卡。
+
+因为\(\phi_{U}\)是同胚，
+对任意一点\(y \in U\),
+可以把\(\phi_{U}(y)\in R^{m}\)的坐标定义为y的坐标，
+即命
+\[u^i=(\phi_U(y))^i,y\in U,i=1,2,\dots,m.\]
+我们称\(u^1(1\leq i \leq)\)为点\(y \in U\)的局部坐标。
+
+设\((U,\phi_U)\)和\((V,\phi_V)\)是M的两个\textbf{坐标卡}，
+若\(U\cap V \neq \emptyset \),
+则\(\phi_U(U\cap V)\)和\(\phi_V(U\cap V)\)都是\(R^m\)中的两个开集。
+\[\phi_V \comp \phi_U^{-1}:\phi_U(U\cap V) \leftarrow \phi_V(U\cap V)\]
+建立了两个欧式空间上开集的同胚，
+其逆映射为\(\phi_U \comp \phi_V^{-1}\)。
+
+因为它们是从欧式空间的一个开集到另一个开集的映射，
+所以用坐标表示时，
+\(\phi_V \comp \phi_U^{-1}\)和\(\phi_U \comp \phi_V^{-1}\)分别表示欧式空间的开集上的m个实函数。
+
+\[\phi_V \comp \phi_U^{-1}:y^i=f^i(x_1,x_2,\dots,x^m),x \in \phi_U(U\cap V \]
+\[\phi_U \comp \phi_V^{-1}:x^i=g^i(y_1,y_2,\dots,y^m),y \in \phi_V(U\cap V)\]
+
+设\(f\)是实数集\(U\in R^m)上的实函数，
+如果\(f\)的直到\(k\)次的偏导数存在且连续，
+则称\(f\)是r次可微的，或者称\(f\) 是\(C^r\)的。
+
+如果\(y^i=f^i(x_1,x_2,\dots,x^m)\) 和\(x^i=g^i(y_1,y_2,\dots,y^m)\)都是\(C^r\)的。
+(\(U \cap V \neq \emptyset \)),或者\(U \cap V \neq \emptyset \),
+我们称(\(U,\phi_U)\)和\((V,\phi_V)\)是\textbf{\(C^r\)相容的}。
+
+\begin{Defination}
+设M是一个m维流形，如果在M上给定了一个坐标卡集
+\( A= \{ (\(U,\phi_U)\), (\((V,\phi_V)\), (\(W,\phi_W)\),\dots \} \),
+满足下列条件，则称A是M的一个\textbf{微分结构}：
+\begin{enumerate}
+                        \item [\((\romannumeral 1)\)]  \(\{U,V,W,\dots\}\)是M的一个开覆盖；
+                    \item [\((\romannumeral 2)\)]  属于A的任意两个坐标卡都是\( C^r-\)相容的;
+                        \item [\((\romannumeral 3)\)]  A是极大的，
+                        即对于M的任意一个坐标卡\((\bar{U}:\phi_{\bar{U}})\),
+                        若与属于A的每一个坐标卡都是\(C^r\) 相容的，
+                        则它自身属于A。
+                \end{enumerate}
+
+\end{Defination}
+
+\begin{Defination}
+若在M上给定了一\(C^r\)微分结构，则称M是一个\(C^r\)\textbf{微分流形}。
+\end{Defination}
+
+\begin{Defination}
+如果X是一个\(C^r\)微分流形，
+\(\phi\)是\(C^r\)映射，
+则称\(\phi\)诱导出的动力系统是\textbf{微分动力系统}。
+\end{Defination}
+
+
+\section{轨道与周期点}
+
+\subsection{轨道}
+称集合
+\[Orb_f(x)=\{f^k(x):k\in Z\}\]
+为f过\(x\in X\)的\textbf{轨道}。
+
+\subsection{周期点}
+如果存在自然数p,
+使得\(f^p(x)=x\),则称x为f的\textbf{周期点}。
+
+\begin{thm}
+周期轨道都是有限轨道，有限轨道都是周期轨道。
+\end{thm}
+
+\begin{proof}
+设\(Orb_f(x)=\{f^k(x):k\in Z\}\)是有限轨道，
+故\(Orb_f(x)\)只有有限个互不相同的点。
+则存在一个自然数N,
+\(O=\{f^0(x),f^1(x),\dots,f^N(x)\}\) 包含了所有这些点。
+则\(f^{N+1}(x)\)必与O中的某一个或几个相等。
+不妨设\(f^{N+!}(x)=f^k(x),0 \leq k \leq N\),
+此时，\(f^{N+!-k}(x)=x\),即x为周期点。
+
+设\(Orb_f(x)=\{f^k(x):k\in Z\}\)是周期轨道，
+不妨设周期为p,即
+\[f^p(x)=x,f^l(x)\neq x ,\forall l=1,2,\dots,p-1\]
+此时，\(\forall k \in Z\),记\( k mod(p)=b,0 \leq b \leq p\),则
+\[f^k(x)=f^b(x)\in \{f(x),f^2(x),f^3(x),\dots,f^p(x)\},\]\
+故\(Orb_f(x)\)是有限轨道。
+
+\end{proof}
+
+
+\section{极限点与非游荡点}
+\subsection{极限点}
+一个点\(x \in X\)的正半轨
+\[x,f(x),f^2(x),\dots\]
+一般都是不收敛的（若收敛，其极限必为不动点），
+但总有许多子序列收敛。
+
+\begin{Defination}
+称\(y\in X\)为X的一个\textbf{\(\omega\)极限点}，
+如果存在正整数的一个子序列，\(n_i rightarrow \infty\)使得
+\[f^{n_i}(x) \rightarrow \infty y。\]
+称X的全体\(\omega\)极限点为X的\(\omega-\)极限集。
+\end{Defination}
+
+
+
+\begin{Defination}
+称\(y \in X\)为X的一个 \textbf{\(\alpha\)极限点}，
+如果有正整数的一个子序列
+,
+\(n_i \rightarrow \infty\),
+使得
+\[f^{-n_i} \rightarrow y,\]
+称x的全体\(\alpha\)极限点为\(\alpha-\)极限集。
+\end{Defination}
+
+\begin{figure}
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{极限集.png}\\
+  \caption{极限点}\label{}
+\end{figure}
+
+hopf分岔是一种常见的分岔，或产生极限环，在极限环里面的点，是向外发散，极限环外面的点，向内收敛，但都是向极限环无限的逼近。
+
+
+\begin{figure}
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{113.png}\\
+  \caption{hopf分岔}\label{}
+\end{figure}
+
+前面的概念都是在度量空间中考虑的，
+现在怎么把极限的概念推广到一般的欧式空间，
+我们引入如下的概念。
+
+\begin{Defination}
+集合
+\[\omega(f)=\cap\limits_{n\in N}\bar{\{f^k(x):k \beq n\}}\]
+\[\alpha(f)=\cap\limits_{n\in N}\bar{\{f^{-k}:k \beq n\}}\]
+分别称为轨道\(Orb_f(x)\)的\textbf{\(\omega\)极限集}，
+和\textbf{\(\alpha\)极限集}。
+\[L(f)=\cap_{x\in X}\omega_f(x)\cup \alpha_f(x)\]
+称为f的极限集。
+\end{Defination}
+
+\subsection{非游荡点}
+我们知道，如果\(f^p(x)=x\),我们把x 叫做周期点。
+有时候，
+这个条件对于我们来说太过苛刻，
+这时候，找一个比它弱一点的条件，
+就是\(f^k(x)\)还在X的附近，
+没有走远，
+我们把这个概念抽象出来，就得到下面的概念。
+
+\begin{Defination}
+点\(x\in X\)称为X的游荡点，
+如果存在x的领域U，使得，
+\[f^k(U)\cap U =\emptyset ,\forall k \in Z\backslash\{0\}。\]
+不是游荡点的点称为\textbf{非游荡点}。
+非游荡点的集合记为\(\Omega(f)\).
+\end{Defination}
+
+\begin{figure}
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{非游荡点集.png}\\
+  \caption{非游荡点集}\label{}
+\end{figure}
+
+\begin{thm}
+        \begin{enumerate}
+                        \item [\((\romannumeral 1)\)]  \(\omega_f(x),\alpha_f(x),\Omega(f)\) 都是闭的；
+                    \item [\((\romannumeral 2)\)]  \(Per(f)\subset L(f) \subset \Omega(f)\)
+                        \item [\((\romannumeral 3)\)]  当X 是紧空间时，\(\omega_f(x),\alpha_f(x)\),和\(\Omega(f)\)都非空。
+        \end{enumerate}
+\end{thm}
+
+\begin{proof}
+1.任意多个闭集的交是闭的。
+故对于\(\omega_f(x)\)和\(\alpha_f(x)\)，
+因为闭包是闭，
+由定义知，
+\(\omega_f(x)\)和\(\alpha_f(x)\)都是任意多个闭集的交，
+故是闭集。
+任意多个开集的并是开集，
+要证所有非游荡点总是闭集，
+即证所有游荡点的集合是开集。
+设x为游荡点，
+由定义知，
+存在x的领域U，使
+\[f^k(U)\cap U =\emptyset ,\forall k \in Z\backslash\{0\}。\]
+则对于U中任意一点也都是游荡点。
+领域是开集，故所有的游荡点构成的集合为开集。
+综上知，\Omega(f)是闭集。
+
+2、Per(f)是所有周期点的集合。
+\(\forall x \in Per(f)\)，
+则x为f的周期点，
+不妨设x为p-周期点，
+p为正整数，
+则\(f^p(x)=x\).
+\(\forall n \in N\),当\(k beq 0\) 时，总可以使\(kp \beq n\)(k充分大)，使得\(f^{kp}(x)=x\in\omega_f(x)\).
+当\(k < 0\)时，总可以使 \(-kp \beq n\)(k充分小)，使得\(f^{-kp}(x)=x\in\alpha_f(x)\)
+而\(L(f)=\cap_{x\in X}\omega_f(x)\cup \alpha_f(x)\), 故\(x\in L(f)\),从而
+\(Per(f)\subset L(f)\).
+下面证明\(L(f) \subset \Omega(f)\)
+\(\forall x_0 \in L(f)\),
+则\(x_0\in \omega_f(x)\)或\(x_0\in \alpha_f(x)\).
+当\(x_0\in \omega_f(x)\)时，即\(x_0\)为\omega - 极限点，下证\(x_0\)为非游荡点。
+根据定义，存在正整数的一个子序列，\(n_i rightarrow \infty\)使得
+\[f^{n_i}(x) \rightarrow \infty x_o,x\in Z\]
+即\(\forall \epsilon >0,\exists I>0,\forall i>I,
+\left|f^{n_i}-x_0 \right|<\epsilon        \).
+即当\(i>I\)时，\(f^{n_i}(x) \in \delta(x_0,\epsion)\)故对\(x_0\)的任意领域U，都存在不同的正整数k,l,
+使得，\(f^k(x),f^l(x)\in U\),不妨设\(k>l\),即
+\[x \in f^{-k}(U),x \in f^{-l}(U)\]
+故\(f^{-k+l}(U)\cap U \supset f^{l}(f^{-k} \cap f^{-l}(U))\neq \emptyset              \)
+(\(x\in f^{-k}(U)\)且 \(x\in f^{-l}(U)).
+其中，\(-k+l<0\).
+
+当\(x_0\in \alpha_f(x)\)时，即\(x_0\)为 \alpha - 极限点，根据定义
+有正整数的一个子序列,
+\(n_i \rightarrow \infty\),
+使得
+\[f^{-n_i} \rightarrow y,\]
+即对x_0的任意领域U，都存在不同的正整数k，l，
+使得，使得，\(f^{-k}(x),f^{-l}(x)\in U\),不妨设\(k>l\),即
+\[x \in f^{k}(U),x \in f^{l}(U)\]
+故\(f^{k-l}(U)\cap U \supset f^{-l}(f^{k} \cap f^{l}(U))\neq \emptyset              \)
+(\(x\in f^{k}(U)\)且 \(x\in f^{l}(U)).
+其中，\(-k+l<0\).
+综上知，\(f^m(U)\cap U \neq \emptyset,\forall m\in z\backslash{0}\),
+即x_0是非游荡点，从而\(L(f) \subset \Omega(f)\).
+
+3、X为紧的度量空间，\(\omega_f(x)\subset X,\alpha_f(x) \subset X \),\(\Omega(f) \subset X\)
+列紧集\(M\subset X\)中每个点列都有收敛子序列收敛于一点\(x\in M\).
+又因为，列紧空间中任意子集都是列紧集。
+故\(\omega_f(x),\alpha_f(x)\),和\(\Omega(f)\)都是列紧集。
+又列紧集的定义，总有一个点是在集合当中，故集合非空。
+从而\(\omega_f(x),\alpha_f(x)\), 和\(\Omega(f)\) 都非空。
+\end{proof}
+
+\begin{thm}
+\(Orb_f(x),Fix(f),Per(f),\omega_f(x),\alpha_f(x),L(f),\Omega(f)\) 都是f的不变集。
+\end{thm}
+
+\begin{proof}
+
+1、\(Orb_f(x)=\{f^k(x):k\in Z\}\)
+
+\(\forall y \in Orb_f(x)\),即\(\forall k \in Z,\exists y=f^{k}(x)\in Orb_f(x)\).
+\(z=f^l(y)=f^l(f^k(x))=f^{l+k}(x),l+k\in Z\),
+即\(z\in Orb_f(x)\),
+故\(Orb_f(x)\)为不变集。
+
+2、Fix(f)为f在X上所以不动点的集合。
+\(\forall x \in Fix(f),f(x)=x,即f(Fix(f))=Fix(f)\),
+故Fix(f)为不变集。
+
+3、Per(f)为f在X上所有周期点的集合。
+\(\forall x\in Per(f)\),即存在\(p\in N\),
+使得\(x=f^p(x)\).
+\(Orb_f(x)={f^k(x):k\in Z}\)
+\(\forall y \in Orb_f(x)\),
+即\(\forall k \in Z,y=f^k(x)\in Orb_f(x)\),
+下证\(y\in Per(f)\).
+f^p(y)=f^p(f^k(x))=f^{p+k}(x)=f^k(f^p(x))=f^k(x)=y
+故\(y\in Per(f)\),
+即Per(f)为不变集。
+
+4、\(\omega(f)=\cap\limits_{n\in N}\bar{\{f^k(x):k \beq n\}}\)
+\(\forall y\in \omega_f(x)\),即存在\(N>0\)(充分大)，当\(n>N\)时，
+\(y=f^k(x),k\beq n>N\)(充分大)。
+Orb_f(y)={f^l(y):l\in Z}
+\(\forall Z \in Orb_f(y)\),
+即\(\forall l\in Z,\)
+有\(z=f^l(y)\in Orb_f(y)\),下证\(z\in \omega_f(x)\)
+\(z=f^l(y)=f^l(f^k(x))=f^{l+k}(x),l+k \beq n+l >N\)
+(n可充分大于N)
+故\(z\in \omega_f(x)\),
+从而\(\omega_f(x)\)为不变集。
+
+5、\(\alpha(f)=\cap\limits_{n\in N}\bar{\{f^{-k}:k \beq n\}}\)
+\(\forall y\in \alpha_f(x)\),即存在\(N>0\)(充分大)，当\(n>N\)时，
+\(y=f^{-k}(x),k\beq n>N\)(充分大)。
+Orb_f(y)={f^l(y):l\in Z}
+\(\forall Z \in Orb_f(y)\),
+即\(\forall l\in Z,\)
+有\(z=f^l(y)\in Orb_f(y)\),下证\(z\in \alpha_f(x)\)
+\(z=f^l(y)=f^l(f^{-k}(x))=f^{l-k}(x),l-k \beq n-l >N\)
+(n可充分大于N)
+故\(z\in \alpha_f(x)\),
+从而\(\alpha_f(x)\)为不变集。
+
+6、首先我们来证明\(f(\Omega(f))\subset \Omega(f)\).\\
+任取\(x\in \Omega(f)\),
+考虑f(x)的任意一个领域U,
+则\(V:f^{-1}(U)\)是x的领域，
+从而有\(f^n(V) \cap V \neq \emptyset\)
+从而，
+\[f^n(U)\cap U=f^{n+1}(U)\cap f(U)\supset f(f^(U)\cap U)\neq \emptyset\]
+从而，\(f(x)\in \Omega(f)\)
+从而，\(f(\Omega(f))\subset \Omega(f)\).
+
+然后我们来证明\(\Omega{f} \subset f(\Omega{f})\).
+下证\(\Omega(f^{-1})=\Omega(f)\).
+\(\forall x\in \Omega (f),\forall x \in U,f^{k}(U)\cap U \neq \emptyset\)
+\(f^{-k}(f^k(U)\cap U)= U\cap f^{-k}(U)\),
+故\(x\in \Omega(f^{-1})\).
+\(\forall x\in \Omega (f^{-1}),\forall x \in U,f^{-k}(U)\cap U \neq \emptyset\)
+\(\emptyset=f^{k}(f^{-k}(U)\cap U)= U\cap f^{-k}(U)\),
+故\(x\in \Omega(f)\)
+故\(\Omega(f^{-1})=\Omega(f)\).
+
+
+
+将前半部分的结论带到\(f^{-1}\),就有，
+\(f^{-1}(\Omega(f^{-1})\subset \Omega(f^{-1})\),
+故，\(f^{-1}(\Omega(f)\subset \Omega(f)\)，
+故\Omega(f)\subset f(\Omega(f))
+
+综上知，\(f(\Omega(f))\=\Omega(f)\),即\Omega(f) 为不变集。
+
+\end{proof}
