@@ -1,24 +1,24 @@
-\part{动力系统的概念}
-\section{动力系统}
+\part{动力系统}
+\section{动力系统的概念}
 
-\begin{Defination}[离散动力系统]
+\begin{defination}[离散动力系统]
 \(f\)是拓扑空间\(X\)上的同胚，
 其迭代构成来了一个\textbf{离散动力系统}\(\{f^n:n\in Z\}\).
 \end{Defination}
 
-\begin{Defination}[连续动力系统]
+\begin{defination}[连续动力系统]
 \(\phi(t,x):R\times X\mapsto X\)是拓扑空间X上的连续流，
 则称之为\textbf{连续动力系统}。
-\end{Defination}
+\end{defination}
 
-\begin{Defination}[微分动力系统]
+\begin{defination}[微分动力系统]
 如果X是一个\(C^r\)微分流形，
 \(\phi\)是\(C^r\)映射，
 则称\(\phi\)诱导出的动力系统是\textbf{微分动力系统}。
-\end{Defination}
+\end{defination}
 \subsection{离散动力系统}
 
-\begin{Defination}[拓扑空间]
+\begin{defination}[拓扑空间]
 设\(X\)是一个集合，\(\mathscr{T}\) 是\(X\)的一个子集族，
 如果\(\mathscr{T}\)满足如下条件：
                 \begin{enumerate}
@@ -27,7 +27,7 @@
                         \item [\((\romannumeral 3)\)]  若\(\mathscr{T}_1\subset \mathscr{T}\),则 \(\cup_{A \in \mathscr{T}_1}A\in \mathscr{T}\),
                 \end{enumerate}
 则称\(\mathscr{T}\)是X的一个拓扑。
-\end{Defination}
+\end{defination}
 如果\(\mathscr{T}\)是\(X\)的一个拓扑，
 则称偶对\((X,\mathscr{T})\)是一个\textbf{拓扑空间}，
 或称集合\(X\)是一个相对于拓扑\(\mathscr{T}\)而言的拓扑空间；
@@ -52,25 +52,25 @@
 一种是序结构，集合之间的元素有了先后关系。
 一种是拓扑结构，它用来描述连续性，分离性，附近，边界等性质。
 
-\begin{Defination}
+\begin{defination}
 设X和Y是两个拓扑空间，
 \(f:X\mapsto Y\),
 如果Y中每一个开集U的原像\(f^{-1}(U)\)是X中的一个开集，
 则称f是从X到Y的一个\textbf{连续映射}，
 或简称映射f连续。
-\end{Defination}
+\end{defination}
 
-\begin{Defination}
+\begin{defination}
 设X和Y是两个拓扑空间，
 如果\(f:X\mapsto Y\)是一个一一映射，
 并且\(f,f^{-1}:X\mapsto Y\),
 则称f是一个\textbf{同胚映射}或\textbf{同胚}。
-\end{Defination}
+\end{defination}
 
-\begin{Defination}[离散动力系统]
+\begin{defination}[离散动力系统]
 \(f\)是拓扑空间\(X\)上的同胚，
 其迭代构成来了一个离散动力系统\(\{f^n:n\in Z\}\).
-\end{Defination}
+\end{defination}
 
 
 在\(R^2\)上的线性变换\(R_{\theta}\)是指一个旋转\(\theta\)角的变换，
@@ -191,14 +191,14 @@
 
 \subsection{连续动力系统}
 
-\begin{Defination}
+\begin{defination}
 一个映射\(\phi(t,x):R\times X \rightarrow X\)称为集合X上的一个\textbf{流}，
 如果对\(\forall t_1,t_2 \in R,x\in X\).
 \begin{enumerate}
                         \item [\((\romannumeral 1)\)]  \(\phi(0,x)=x\)；
                         \item [\((\romannumeral 2)\)]  \(\phi(t_1+t_2,x)=\phi(t_1,\phi(t_2,x))\);
                 \end{enumerate}
-\end{Defination}
+\end{defination}
 
 
 设\(x=\phi(t,x_0)\)是常微分方程
@@ -370,12 +370,12 @@
 因此在每一点的近傍可以引入局部坐标系，
 流形是一块块"欧式空间"粘起来的结果。
 
-\begin{Defination}
+\begin{defination}
 设M是Housdorff空间，
 若对任意一点\(x\in M\),
 都有x在M中的一个领域U同胚于欧式空间\(R^m\)的一个开集，
 则称M是一个m维\textbf{流形}。
-\end{Defination}
+\end{defination}
 
 设同胚映射为\(\phi_{U}:U\leftarrow \phi_{U}\),
 则称\((U,\phi_{U})\)是M的一个坐标卡。
@@ -409,7 +409,7 @@
 (\(U \cap V \neq \emptyset \)),或者\(U \cap V \neq \emptyset \),
 我们称(\(U,\phi_U)\)和\((V,\phi_V)\)是\textbf{\(C^r\)相容的}。
 
-\begin{Defination}
+\begin{defination}
 设M是一个m维流形，如果在M上给定了一个坐标卡集
 \( A= \{ (\(U,\phi_U)\), (\((V,\phi_V)\), (\(W,\phi_W)\),\dots \} \),
 满足下列条件，则称A是M的一个\textbf{微分结构}：
@@ -422,17 +422,17 @@
                         则它自身属于A。
                 \end{enumerate}
 
-\end{Defination}
+\end{defination}
 
-\begin{Defination}
+\begin{defination}
 若在M上给定了一\(C^r\)微分结构，则称M是一个\(C^r\)\textbf{微分流形}。
-\end{Defination}
+\end{defination}
 
-\begin{Defination}
+\begin{defination}
 如果X是一个\(C^r\)微分流形，
 \(\phi\)是\(C^r\)映射，
 则称\(\phi\)诱导出的动力系统是\textbf{微分动力系统}。
-\end{Defination}
+\end{defination}
 
 
 \section{轨道与周期点}
@@ -476,16 +476,16 @@
 一般都是不收敛的（若收敛，其极限必为不动点），
 但总有许多子序列收敛。
 
-\begin{Defination}
+\begin{defination}
 称\(y\in X\)为X的一个\textbf{\(\omega\)极限点}，
 如果存在正整数的一个子序列，\(n_i rightarrow \infty\)使得
 \[f^{n_i}(x) \rightarrow \infty y。\]
 称X的全体\(\omega\)极限点为X的\(\omega-\)极限集。
-\end{Defination}
+\end{defination}
 
 
 
-\begin{Defination}
+\begin{defination}
 称\(y \in X\)为X的一个 \textbf{\(\alpha\)极限点}，
 如果有正整数的一个子序列
 ,
@@ -493,7 +493,7 @@
 使得
 \[f^{-n_i} \rightarrow y,\]
 称x的全体\(\alpha\)极限点为\(\alpha-\)极限集。
-\end{Defination}
+\end{defination}
 
 \begin{figure}
   \centering
@@ -516,7 +516,7 @@ hopf分岔是一种常见的分岔，或产生极限环，在极限环里面的�
 现在怎么把极限的概念推广到一般的欧式空间，
 我们引入如下的概念。
 
-\begin{Defination}
+\begin{defination}
 集合
 \[\omega(f)=\cap\limits_{n\in N}\bar{\{f^k(x):k \beq n\}}\]
 \[\alpha(f)=\cap\limits_{n\in N}\bar{\{f^{-k}:k \beq n\}}\]
@@ -524,7 +524,7 @@ hopf分岔是一种常见的分岔，或产生极限环，在极限环里面的�
 和\textbf{\(\alpha\)极限集}。
 \[L(f)=\cap_{x\in X}\omega_f(x)\cup \alpha_f(x)\]
 称为f的极限集。
-\end{Defination}
+\end{defination}
 
 \subsection{非游荡点}
 我们知道，如果\(f^p(x)=x\),我们把x 叫做周期点。
@@ -535,13 +535,13 @@ hopf分岔是一种常见的分岔，或产生极限环，在极限环里面的�
 没有走远，
 我们把这个概念抽象出来，就得到下面的概念。
 
-\begin{Defination}
+\begin{defination}
 点\(x\in X\)称为X的游荡点，
 如果存在x的领域U，使得，
 \[f^k(U)\cap U =\emptyset ,\forall k \in Z\backslash\{0\}。\]
 不是游荡点的点称为\textbf{非游荡点}。
 非游荡点的集合记为\(\Omega(f)\).
-\end{Defination}
+\end{defination}
 
 \begin{figure}
   \centering
@@ -705,3 +705,24 @@ Orb_f(y)={f^l(y):l\in Z}
 综上知，\(f(\Omega(f))\=\Omega(f)\),即\Omega(f) 为不变集。
 
 \end{proof}
+
+\section{动力系统的性质}
+
+设$X$是紧的度量空间.
+\begin{defination}{极小性}
+  如果动力系统$f:X\to X$的任意轨道都在$X$中稠密,
+  则称$f$具有极小性.
+\end{defination}
+
+\begin{defination}{拓扑传递性}
+  如果$f:X \to X$有一条轨道在X中稠密,则称$f$具有拓扑传递性.
+\end{defination}
+
+
+\begin{defination}{拓扑混合性}
+  如果对任意两个非空开集$U,V \subset X$都存在整数 $N>0$,使得
+  \begin{equation}
+    \label{eq:01}
+ f^n(U) \cap V \neq \emptyset,n>N.
+  \end{equation}
+\end{defination}

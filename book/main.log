@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.2.21)  23 JUN 2020 04:51
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.2.21)  30 JUN 2020 08:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2154,7 +2154,56 @@ or  <return>  to continue without it.
 \c@case=\count367
 \c@solve=\count368
 Package hyperref Info: Option `colorlinks' set `true' on input line 88.
-) (./main.aux (./scr/chap1.aux
+! Illegal parameter number in definition of \comp.
+<to be read again> 
+                   1
+l.130 \newcommand{\ddt[1]}{\frac{\mathrm{d} {#1
+                                               }}{ \mathrm{d}t}}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \comp.
+<to be read again> 
+                   1
+l.131 \newcommand{\dd[2]}{\frac{\mathrm{d} {#1
+                                              }}{ \mathrm{d}{#2}}}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \comp.
+<to be read again> 
+                   2
+l.131 ...2]}{\frac{\mathrm{d} {#1}}{ \mathrm{d}{#2
+                                                  }}}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \comp.
+<to be read again> 
+                   1
+l.143 \renewcommand{\theoremname}{#1
+                                    }
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+)
+Runaway definition?
+->\ensuremath \mathop {\scalebox {.6}{$\circ $}} \newcommand {\dxdt }\ETC.
+! File ended while scanning definition of \comp.
+<inserted text> 
+                }
+l.7 
+    
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+(./main.aux (./scr/chap1.aux
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -2304,24 +2353,16 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 2.
 
 
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \begin{Defination}
-                      [离散动力系统]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/m/sc' undefined
+(Font)              using `TU/FandolSong-Regular(0)/m/n' instead on input line 
+4.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 5.
 
 
-! LaTeX Error: \begin{document} ended by \end{Defination}.
+! LaTeX Error: \begin{defination} on input line 4 ended by \end{Defination}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -2333,205 +2374,17 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 \begin{Defination}
-                      [连续动力系统]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \end{Defination}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 \begin{Defination}
-                       [微分动力系统]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 \end{Defination}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 \begin{Defination}
-                       [拓扑空间]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30 \end{Defination}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 \begin{Defination}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 \end{Defination}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63 \begin{Defination}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 \end{Defination}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 \begin{Defination}
-                       [离散动力系统]
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 \end{Defination}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/m/sc' undefined
-(Font)              using `TU/FandolSong-Regular(0)/m/n' instead on input line 
-81.
-
-Missing character: There is no （ in font cmr10!
-Missing character: There is no ） in font cmr10!
-Missing character: There is no （ in font cmr10!
-Missing character: There is no ） in font cmr10!
-Missing character: There is no （ in font cmr10!
-Missing character: There is no ） in font cmr10!
-Missing character: There is no （ in font cmr10!
-Missing character: There is no ） in font cmr10!
 [6]
+Missing character: There is no （ in font cmr10!
+Missing character: There is no ） in font cmr10!
+Missing character: There is no （ in font cmr10!
+Missing character: There is no ） in font cmr10!
+Missing character: There is no （ in font cmr10!
+Missing character: There is no ） in font cmr10!
+Missing character: There is no （ in font cmr10!
+Missing character: There is no ） in font cmr10!
 Missing character: There is no ， in font cmr10!
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.201 \end{Defination}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[7]
+ [7]
 Overfull \hbox (1.65714pt too wide) in paragraph at lines 240--244
 []\TU/FandolSong-Regular(0)/m/n/10.53937 然 后，|  我 们 取 定 一 个 初 值 $\OML/cmm/m/it/
 10.53937 x[]$\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  我 们 来 验 证 它 的 群 性 质。|  
@@ -2593,13 +2446,13 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+[8]
 ! Text line contains an invalid character.
 l.265   ^^?
             & \left| \phi(t,x)-\phi(t_0,x_0)\right| \\
 A funny symbol that I can't read has just been input.
 Continue, and I'll forget that it ever happened.
 
-[8]
 Runaway argument?
 {L(|t_0|+\delta _1)\)是一个常数。 于是，根据范数的连续\ETC.
 ! Paragraph ended before ^ was complete.
@@ -2711,6 +2564,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[9]
 
 ! LaTeX Error: \begin{proof} on input line 214 ended by \end{thm}.
 
@@ -2763,7 +2617,6 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[9]
 
 ! LaTeX Error: \begin{proof} on input line 214 ended by \end{thm}.
 
@@ -2949,42 +2802,24 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 Missing character: There is no è in font cmex7!
+[10]
 
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.373 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{proof} on input line 214 ended by \end{Defination}.
+! LaTeX Error: Command \namedtheorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 \end{Defination}
-                      
+l.395 其逆映射为\(\phi_U \comp
+                                    \phi_V^{-1}\)。
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.393 \[\phi_V \comp
-                     \phi_U^{-1}:\phi_U(U\cap V) \leftarrow \phi_V(U\cap V)\]
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
+\comp ...\newtheorem *{namedtheorem}{\theoremname 
+                                                  } \newcommand {\theoremnam...
 l.395 其逆映射为\(\phi_U \comp
                                     \phi_V^{-1}\)。
 The control sequence at the end of the top line
@@ -2993,7 +2828,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+
+! LaTeX Error: Command \namedtheorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.399 \(\phi_V \comp
+                     \phi_U^{-1}\)和\(\phi_U \comp \phi_V^{-1}\)分别表�...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! Undefined control sequence.
+\comp ...\newtheorem *{namedtheorem}{\theoremname 
+                                                  } \newcommand {\theoremnam...
 l.399 \(\phi_V \comp
                      \phi_U^{-1}\)和\(\phi_U \comp \phi_V^{-1}\)分别表�...
 The control sequence at the end of the top line
@@ -3002,7 +2854,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+
+! LaTeX Error: Command \namedtheorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.399 ...hi_V \comp \phi_U^{-1}\)和\(\phi_U \comp
+                                                   \phi_V^{-1}\)分别表示...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! Undefined control sequence.
+\comp ...\newtheorem *{namedtheorem}{\theoremname 
+                                                  } \newcommand {\theoremnam...
 l.399 ...hi_V \comp \phi_U^{-1}\)和\(\phi_U \comp
                                                    \phi_V^{-1}\)分别表示...
 The control sequence at the end of the top line
@@ -3011,7 +2880,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+
+! LaTeX Error: Command \namedtheorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.401 \[\phi_V \comp
+                     \phi_U^{-1}:y^i=f^i(x_1,x_2,\dots,x^m),x \in \phi_U(U\c...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! Undefined control sequence.
+\comp ...\newtheorem *{namedtheorem}{\theoremname 
+                                                  } \newcommand {\theoremnam...
 l.401 \[\phi_V \comp
                      \phi_U^{-1}:y^i=f^i(x_1,x_2,\dots,x^m),x \in \phi_U(U\c...
 The control sequence at the end of the top line
@@ -3020,7 +2906,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+
+! LaTeX Error: Command \namedtheorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \[\phi_U \comp
+                     \phi_V^{-1}:x^i=g^i(y_1,y_2,\dots,y^m),y \in \phi_V(U\c...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 ! Undefined control sequence.
+\comp ...\newtheorem *{namedtheorem}{\theoremname 
+                                                  } \newcommand {\theoremnam...
 l.402 \[\phi_U \comp
                      \phi_V^{-1}:x^i=g^i(y_1,y_2,\dots,y^m),y \in \phi_V(U\c...
 The control sequence at the end of the top line
@@ -3029,7 +2932,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[10]
 
 ! LaTeX Error: Bad math environment delimiter.
 
@@ -3052,19 +2954,6 @@ Missing character: There is no ， in font cmr10!
 Missing character: There is no 如 in font cmr10!
 Missing character: There is no 果 in font cmr10!
 
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.412 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 ! LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3086,71 +2975,6 @@ Type  H <return>  for immediate help.
                                                   
 l.414 ...((V,\phi_V)\), (\(W,\phi_W)\),\dots \} \)
                                                   ,
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{proof} on input line 214 ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.425 \end{Defination}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.427 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{proof} on input line 214 ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.429 \end{Defination}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.431 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{proof} on input line 214 ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.435 \end{Defination}
-                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -3182,59 +3006,17 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [11]
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.479 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (16.22285pt too wide) in paragraph at lines 480--482
+[][][] \TU/FandolSong-Regular(0)/m/n/10.53937 定 义 \TU/lmr/m/n/10.53937 3.1\TU/l
+mr/m/sc/10.53937 . []\TU/FandolSong-Regular(0)/m/n/10.53937 称 $\OML/cmm/m/it/10
+.53937 y \OMS/cmsy/m/n/10.53937 2 \OML/cmm/m/it/10.53937 X$ \TU/FandolSong-Regu
+lar(0)/m/n/10.53937 为 \TU/lmr/m/n/10.53937 X \TU/FandolSong-Regular(0)/m/n/10.5
+3937 的 一 个$\OML/cmm/m/it/10.53937 !$ \TU/FandolSong-Regular(0)/bx/n/10.53937 极 
+限 点\TU/FandolSong-Regular(0)/m/n/10.53937 ，|  如 果 存 在 正 整 数 的 一 个 子 序 列，| $\OML
+/cmm/m/it/10.53937 n[]rightarrow\OMS/cmsy/m/n/10.53937 1$
+ []
 
 Missing character: There is no 。 in font cmr10!
-
-! LaTeX Error: \begin{proof} on input line 214 ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.484 \end{Defination}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.488 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{proof} on input line 214 ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.496 \end{Defination}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 
 LaTeX Warning: File `极限集.png' not found on input line 501.
 
@@ -3287,19 +3069,6 @@ or  <return>  to continue without it.
 
 File: 113.png Graphic file (type bmp)
 <113.png>
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.519 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 ! Limit controls must follow a math operator.
 l.521 \[\omega(f)=\cap\limits
                              _{n\in N}\bar{\{f^k(x):k \beq n\}}\]
@@ -3327,6 +3096,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[12]
 ! Limit controls must follow a math operator.
 l.522 \[\alpha(f)=\cap\limits
                              _{n\in N}\bar{\{f^{-k}:k \beq n\}}\]
@@ -3354,46 +3124,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-! LaTeX Error: \begin{proof} on input line 214 ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.527 \end{Defination}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment Defination undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.538 \begin{Defination}
-                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 Missing character: There is no 。 in font cmr10!
-
-! LaTeX Error: \begin{proof} on input line 214 ended by \end{Defination}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.544 \end{Defination}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 
 LaTeX Warning: File `非游荡点集.png' not found on input line 549.
 
@@ -3426,7 +3157,6 @@ l.550   \caption{非游荡点集}\label{^^?
 A funny symbol that I can't read has just been input.
 Continue, and I'll forget that it ever happened.
 
-[12]
 
 ! LaTeX Error: Environment thm undefined.
 
@@ -3541,6 +3271,7 @@ Missing character: There is no 点 in font cmr10!
 Missing character: There is no ， in font cmr10!
 Missing character: There is no 下 in font cmr10!
 Missing character: There is no 证 in font cmr10!
+[13]
 ! Undefined control sequence.
 l.597 ...时，\(f^{n_i}(x) \in \delta(x_0,\epsion
                                                   )\)故对\(x_0\)的任意�...
@@ -3605,7 +3336,6 @@ Missing character: There is no 个 in font cmr10!
 Missing character: There is no 子 in font cmr10!
 Missing character: There is no 序 in font cmr10!
 Missing character: There is no 列 in font cmr10!
-[13]
 
 ! LaTeX Error: Bad math environment delimiter.
 
@@ -3724,6 +3454,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+[14]
 ! Limit controls must follow a math operator.
 l.666 5、\(\alpha(f)=\cap\limits
                                  _{n\in N}\bar{\{f^{-k}:k \beq n\}}\)
@@ -3799,7 +3530,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[14]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -3864,14 +3594,453 @@ Missing character: There is no 变 in font cmr10!
 Missing character: There is no 集 in font cmr10!
 Missing character: There is no 。 in font cmr10!
 ) [15]
-\openout2 = `scr/chap2.aux'.
+\openout2 = `scr/chap4.aux'.
 
- (./scr/chap2.tex [16
+ (./scr/chap4.tex [16
 
 
 
 
 ]
+Chapter 1
+
+! LaTeX Error: Command \namedtheorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp
+                 g = g \comp f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+\comp ...\newtheorem *{namedtheorem}{\theoremname 
+                                                  } \newcommand {\theoremnam...
+l.28  $ h  \comp
+                 g = g \comp f$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \dxdt already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \dydt already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \dzdt already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \ddt already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \dd already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \Proof already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \namedtheorem already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \theoremname already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \named already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \enumeratei already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \ode already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \ode* already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28  $ h  \comp g = g \comp
+                             f$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment ode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \begin{ode}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced alignment tab character &.
+l.42 &
+        \dxdt = ax+by,\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.42 &  \dxdt
+              = ax+by,\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.43 &
+        \dydt = cx+dy,
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.43 &  \dydt
+              = cx+dy,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{proof} on input line 214 ended by \end{ode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \end{ode}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment ode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \begin{ode}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced alignment tab character &.
+l.48   &
+         \dxdt =ax+by+ \Phi(x,y),\\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.48   & \dxdt
+               =ax+by+ \Phi(x,y),\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.48   & \dxdt =ax+by+ \Phi
+                           (x,y),\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.49   &
+         \dydt =cx+dy+ \Psi(x,y),
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.49   & \dydt
+               =cx+dy+ \Psi(x,y),
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{proof} on input line 214 ended by \end{ode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{ode}
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.50 \end{ode}
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (5.97826pt too wide) in paragraph at lines 42--54
+\OT1/cmr/m/n/10.53937 = \OML/cmm/m/it/10.53937 cx \OT1/cmr/m/n/10.53937 + \OML/
+cmm/m/it/10.53937 dy \OT1/cmr/m/n/10.53937 + ^^I(\OML/cmm/m/it/10.53937 x; y\OT
+1/cmr/m/n/10.53937 )\OML/cmm/m/it/10.53937 ;$ \TU/FandolSong-Regular(0)/m/n/10.
+53937 其 中\TU/lmr/m/n/10.53937 ,a,b,c,d \TU/FandolSong-Regular(0)/m/n/10.53937 是
+ 实 数\TU/lmr/m/n/10.53937 ,$\OT1/cmr/m/n/10.53937 ^^H(0\OML/cmm/m/it/10.53937 ; 
+\OT1/cmr/m/n/10.53937 0) = ^^I(0\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.53937 
+0) = 0$\TU/lmr/m/n/10.53937 , \TU/FandolSong-Regular(0)/m/n/10.53937 且 在 原 点 的 
+领 域 内 $\OT1/cmr/m/n/10.53937 ^^H(\OML/cmm/m/it/10.53937 x; y\OT1/cmr/m/n/10.539
+37 )\OML/cmm/m/it/10.53937 ; \OT1/cmr/m/n/10.53937 ^^I(\OML/cmm/m/it/10.53937 x
+; y\OT1/cmr/m/n/10.53937 )$
+ []
+
+
+LaTeX Warning: Reference `equ:4.1' on page 17 undefined on input line 55.
+
+
+LaTeX Warning: Reference `equ:4.1' on page 17 undefined on input line 60.
+
+
+LaTeX Warning: Reference `equ:4.1' on page 17 undefined on input line 66.
+
+[17]
+
+LaTeX Warning: Reference `equ:4.1' on page 18 undefined on input line 78.
+
+
+LaTeX Warning: Reference `equ:4.2' on page 18 undefined on input line 79.
+
+
+LaTeX Warning: Reference `equ:4.2' on page 18 undefined on input line 80.
+
+
+LaTeX Warning: Reference `equ:4.1' on page 18 undefined on input line 82.
+
+
+LaTeX Warning: Reference `equ:4.2' on page 18 undefined on input line 84.
+
+
+LaTeX Warning: Reference `equ:4.1' on page 18 undefined on input line 86.
+
+
+LaTeX Warning: Reference `equ:4.2' on page 18 undefined on input line 88.
+
+
+LaTeX Warning: Reference `equ:4.2' on page 18 undefined on input line 95.
+
+
+LaTeX Warning: Reference `equ:4.1' on page 18 undefined on input line 101.
+
+
+LaTeX Warning: Reference `equ:4.2' on page 18 undefined on input line 109.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.116   可逆线性映射A \in
+                                L(X,X)是双曲线性映射的充分必要�...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 是 in font cmr10!
+Missing character: There is no 双 in font cmr10!
+Missing character: There is no 曲 in font cmr10!
+Missing character: There is no 线 in font cmr10!
+Missing character: There is no 性 in font cmr10!
+Missing character: There is no 映 in font cmr10!
+Missing character: There is no 射 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 充 in font cmr10!
+Missing character: There is no 分 in font cmr10!
+Missing character: There is no 必 in font cmr10!
+Missing character: There is no 要 in font cmr10!
+Missing character: There is no 条 in font cmr10!
+Missing character: There is no 件 in font cmr10!
+Missing character: There is no 为 in font cmr10!
+Missing character: There is no 它 in font cmr10!
+Missing character: There is no 的 in font cmr10!
+Missing character: There is no 存 in font cmr10!
+Missing character: There is no 谱 in font cmr10!
+Missing character: There is no 集 in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.117   它的存谱集 $\sigma
+                               (A)$与复平面上的单位圆$S^1$不相交,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+) [18]
+\openout2 = `scr/chap2.aux'.
+
+ (./scr/chap2.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 5.26968pt
@@ -3881,7 +4050,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\noindent' on input line 1.
 
-[17]
+[19
+
+
+
+
+]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 2.
@@ -3977,10 +4151,10 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[18]) [19]
+[20]) [21]
 \openout2 = `scr/chap3.aux'.
 
- (./scr/chap3.tex [20
+ (./scr/chap3.tex [22
 
 
 
@@ -3995,7 +4169,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\noindent' on input line 135.
 
-[21]
+[23]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 136.
@@ -4027,17 +4201,17 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Reference `1' on page 22 undefined on input line 162.
+LaTeX Warning: Reference `1' on page 24 undefined on input line 162.
 
 
-LaTeX Warning: Reference `2' on page 22 undefined on input line 167.
+LaTeX Warning: Reference `2' on page 24 undefined on input line 167.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
-[22]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
@@ -4048,10 +4222,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
  []
 
 Missing character: There is no ， in font cmr10!
-[23] [24]
+[25] [26]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
- (./main.aux (./scr/chap1.aux) (./scr/chap2.aux) (./scr/chap3.aux))
+ (./main.aux (./scr/chap1.aux) (./scr/chap4.aux) (./scr/chap2.aux)
+(./scr/chap3.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 288.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 288.
 
@@ -4070,15 +4245,15 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
  ) )
-(\end occurred when \iftrue on line 17 was incomplete)
-(\end occurred when \ifnum on line 17 was incomplete) 
+(\end occurred when \iftrue on line 20 was incomplete)
+(\end occurred when \ifnum on line 20 was incomplete) 
 Here is how much of TeX's memory you used:
- 41700 strings out of 494558
- 808888 string characters out of 6167440
- 888213 words of memory out of 5000000
- 44815 multiletter control sequences out of 15000+600000
- 537697 words of font info for 78 fonts, out of 8000000 for 9000
+ 41710 strings out of 494558
+ 808906 string characters out of 6167440
+ 888485 words of memory out of 5000000
+ 44821 multiletter control sequences out of 15000+600000
+ 537689 words of font info for 77 fonts, out of 8000000 for 9000
  425 hyphenation exceptions out of 8191
- 62i,14n,74p,10410b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,74p,10410b,723s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (24 pages).
+Output written on main.pdf (26 pages).

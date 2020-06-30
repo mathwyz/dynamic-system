@@ -1,7 +1,7 @@
-\contentsline {part}{Part\ 1. \enspace \noindent 动力系统的概念}{5}{part.1}
-\contentsline {section}{\tocsection {}{1}{动力系统}}{6}{section.0.1}
+\contentsline {part}{Part\ 1. \enspace \noindent 动力系统}{5}{part.1}
+\contentsline {section}{\tocsection {}{1}{动力系统的概念}}{6}{section.0.1}
 \contentsline {subsection}{\tocsubsection {}{1.1}{离散动力系统}}{6}{subsection.0.1.1}
-\contentsline {subsection}{\tocsubsection {}{1.2}{连续动力系统}}{7}{subsection.0.1.2}
+\contentsline {subsection}{\tocsubsection {}{1.2}{连续动力系统}}{8}{subsection.0.1.2}
 \contentsline {subsubsection}{\tocsubsubsection {}{1.2.1}{解对初值的连续依赖性的证明}}{9}{subsubsection.0.1.2.1}
 \contentsline {subsection}{\tocsubsection {}{1.3}{符号动力系统}}{10}{subsection.0.1.3}
 \contentsline {subsection}{\tocsubsection {}{1.4}{微分动力系统}}{10}{subsection.0.1.4}
@@ -10,12 +10,19 @@
 \contentsline {subsection}{\tocsubsection {}{2.2}{周期点}}{11}{subsection.0.2.2}
 \contentsline {section}{\tocsection {}{3}{极限点与非游荡点}}{12}{section.0.3}
 \contentsline {subsection}{\tocsubsection {}{3.1}{极限点}}{12}{subsection.0.3.1}
-\contentsline {subsection}{\tocsubsection {}{3.2}{非游荡点}}{12}{subsection.0.3.2}
-\contentsline {part}{Part\ 2. \enspace \noindent 结构稳定性}{17}{part.2}
-\contentsline {section}{\tocsection {}{4}{离散动力系统的结构稳定性}}{18}{section.0.4}
-\contentsline {subsection}{\tocsubsection {}{4.1}{全局结构稳定性}}{18}{subsection.0.4.1}
-\contentsline {subsubsection}{\tocsubsubsection {}{4.1.1}{f的\(C^{r}\)拓扑}}{18}{subsubsection.0.4.1.1}
-\contentsline {subsubsection}{\tocsubsubsection {}{4.1.2}{f的范数的定义}}{18}{subsubsection.0.4.1.2}
-\contentsline {subsection}{\tocsubsection {}{4.2}{局部结构稳定性}}{18}{subsection.0.4.2}
-\contentsline {section}{\tocsection {}{5}{连续动力系统的结构稳定性}}{18}{section.0.5}
-\contentsline {subsection}{\tocsubsection {}{5.2}{局部结构稳定性}}{19}{subsection.0.5.2}
+\contentsline {subsection}{\tocsubsection {}{3.2}{非游荡点}}{13}{subsection.0.3.2}
+\contentsline {section}{\tocsection {}{4}{动力系统的性质}}{15}{section.0.4}
+\contentsline {chapter}{\tocchapter {Chapter}{1}{双曲结构}}{17}{chapter.1}
+\contentsline {section}{\tocsection {}{1}{Hartman线性化}}{17}{section.1.1}
+\contentsline {subsection}{\tocsubsection {}{1.1}{离散动力系统的Hartman线性化定理}}{17}{subsection.1.1.1}
+\contentsline {subsection}{\tocsubsection {}{1.2}{微分方程的线性化定理}}{17}{subsection.1.1.2}
+\contentsline {section}{\tocsection {}{2}{双曲线性映射}}{18}{section.1.2}
+\contentsline {section}{\tocsection {}{3}{稳定流形与不稳定流形}}{18}{section.1.3}
+\contentsline {part}{Part\ 2. \enspace \noindent 结构稳定性}{19}{part.2}
+\contentsline {section}{\tocsection {}{4}{离散动力系统的结构稳定性}}{20}{section.1.4}
+\contentsline {subsection}{\tocsubsection {}{4.1}{全局结构稳定性}}{20}{subsection.1.4.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{4.1.1}{f的\(C^{r}\)拓扑}}{20}{subsubsection.1.4.1.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{4.1.2}{f的范数的定义}}{20}{subsubsection.1.4.1.2}
+\contentsline {subsection}{\tocsubsection {}{4.2}{局部结构稳定性}}{20}{subsection.1.4.2}
+\contentsline {section}{\tocsection {}{5}{连续动力系统的结构稳定性}}{20}{section.1.5}
+\contentsline {subsection}{\tocsubsection {}{5.2}{局部结构稳定性}}{21}{subsection.1.5.2}

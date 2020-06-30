@@ -1,0 +1,120 @@
+\chapter{双曲结构}
+设$f$为 $C^r(r>1)$Banach流形$X$上的$C^r$动力系统,
+$f(x_0)=x_0$.
+\begin{defination}
+  不懂点$x_0$称为是双曲的,
+  如果其切映射$A=Df(x_0):T_{x_0}X \to T_{x_0}X$是可逆映射且具有不变的直和分解,既
+  \begin{equation}
+    \label{eq:0202}
+T_{x_0}X= E^s \oplus E^u, AE^s = E^s ,AE^u =E^u,
+\end{equation}
+且满足扩张性和收缩性,既对 $\forall k \in Z_{+}$,
+\begin{equation}
+  \label{eq:0203}
+  \begin{aligned}
+    || A^k x|| \leqslant c \lambda^k ||x||, \forall x \in  E^s,\\
+    ||A^{-k}x|| \leqslant c \lambda^k ||x||, \forall x \in E^u,
+  \end{aligned}
+\end{equation}
+其中$c>0,0<\lambda<1$为常数.
+\end{defination}
+\section{Hartman线性化}
+\subsection{离散动力系统的Hartman线性化定理}
+\begin{defination}
+  拓扑空间$X$上同胚$f$和拓扑空间$Y$上同胚$g$称为是拓扑共轭的,
+  简记为$f \sim g$,
+  如果存在同胚 $h : X \to Y$,
+  使得
+ $ h  \comp g = g \comp f$
+\end{defination}
+
+
+\begin{defination}{Hartman-Crobman线性化定理}
+  设$f$为$C^r(r \geqslant 1 )$Banach流形$X$上的$C^r$动力系统,
+  $x_0 \in X$ 为 $f$ 的双曲不动点.
+  则存在$x_0$的领域 $U \subset X $和 $O$的领域 $V  \subset T_{x_0}X$,
+  使得$f|_{U}$与$Df(x_0)|_v$拓扑共轭.
+
+\end{defination}
+\subsection{微分方程的线性化定理}
+\begin{ode}
+  \label{equ:4.1}
+&  \dxdt = ax+by,\\
+&  \dydt = cx+dy,
+\end{ode}
+其中,a,b,c,d是实数,
+\begin{ode}
+  \label{equ:4.2}
+  & \dxdt =ax+by+ \Phi(x,y),\\
+  & \dydt =cx+dy+ \Psi(x,y),
+\end{ode}
+其中,a,b,c,d是实数,$\Phi(0,0)=\Psi(0,0)=0$,
+且在原点的领域内$\Phi(x,y),\Psi(x,y)$对$x,y$连续,
+还满足解的唯一性条件.
+\begin{theorem}
+  设$O(0,0)$是方程组\ref{equ:4.1}的稳定(不稳定)吸引子,
+  且方程组
+\end{theorem}
+
+\begin{theorem}
+  设$O(0,0)$是方程组\ref{equ:4.1}的稳定(不稳定)焦点,
+  另外条件1成立,
+  则$O(0,0)$也是方程组的稳定(不稳定)焦点.
+\end{theorem}
+
+\begin{theorem}
+  设O(0,0)是方程组\ref{equ:4.1}的正常结点,
+  设特征根$|\lambda_2|>|\lambda_1|$.
+
+  \begin{description}
+  \item [1] 如果条件1满足,则方程组在奇点附近的轨线都沿特殊方向$\theta =0,\frac{\pi}{2},\pi ,\frac{3\pi}{2}$进入奇点O.
+  \item [2] 如果条件2也满足,则沿$\theta=\frac{\pi}{2},\frac{3\pi}{2}$各只有一条轨线进入奇点O.
+  \end{description}
+\end{theorem}
+
+\begin{theorem}
+  对系统有:
+  \begin{enumerate}
+  \item[enu1] 当线性方程组\ref{equ:4.1}的奇点O是焦点时,
+    如果方程组\ref{equ:4.2}的附加项$\Phi,\Psi$满足条件1,
+    则奇点O仍是\ref{equ:4.2}的焦点,
+    且稳定性不变;
+  \item[enu2] 当奇点O是\ref{equ:4.1}的鞍点或正常结点时,
+    如果$\Phi,\Psi$满足条件1和2,
+    则相应的奇点O仍分别是\ref{equ:4.2}的鞍点和正常结点.
+    且对正常结点来说,不改变稳定性;
+  \item[enu3]当奇点O是\ref{equ:4.1}的退化结点时,
+    如果$\Phi,\Psi$满足条件1和2,
+    则奇点O仍是\ref{equ:4.2}的i临界结点,
+    且不改变稳定性.
+  \item[enu3]
+  \end{enumerate}
+\end{theorem}
+
+\begin{theorem}{S.Sternberg,线性化定理}
+  设\ref{equ:4.2}方程组中的$\Phi,\Psi \in C^\infty$,
+  而且
+  \begin{equation}
+    \label{eq:0204}
+\Phi,\Psi =O(r^2),r\to0,
+  \end{equation}
+  方程组~(\ref{equ:4.1})的特征根$\lambda_1$和$\lambda_2$满足:
+  \begin{equation}
+    \label{eq:0205}
+    \lambda_k \neq m_1\lambda_1 +m_2\lambda_2,k=1,2,
+  \end{equation}
+  其中$m_1,m_2$为非负整数,
+  且$2\leq m_1+m_2,$
+  则存在$c^\infty$微分同胚
+  可使得方程组~(\ref{equ:4.2})线性化.
+\end{theorem}
+
+\section{双曲线性映射}
+
+\begin{theorem}
+  设(X,||.||)为Bananch空间.
+  可逆线性映射A \in L(X,X)是双曲线性映射的充分必要条件为
+  它的存谱集 $\sigma(A)$与复平面上的单位圆$S^1$不相交,
+  既$\sigma(A) \cap S^1 = \emptyset$.
+\end{theorem}
+\section{稳定流形与不稳定流形}
